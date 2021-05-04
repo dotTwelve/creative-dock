@@ -5,7 +5,7 @@
     grid-template-rows: repeat(3, calc(100% / 3));
 }
 
-.child {
+.service {
     display: flex;
     align-items: center;
     align-content: center;
@@ -13,18 +13,18 @@
     font-size: 2.5rem;
 }
 
-.child:nth-child(-n + 3) {
+.service:nth-child(-n + 3) {
     border-bottom: var(--border);
 }
 
-.child:nth-child(3n + 1) {
+.service:nth-child(3n + 1) {
     border-right: var(--border);
 }
 
-.child:nth-child(3n) {
+.service:nth-child(3n) {
     border-left: var(--border);
 }
 
-.child:nth-child(n + 7) {
+.service:nth-child(n + 7) {
     border-top: var(--border);
 }
