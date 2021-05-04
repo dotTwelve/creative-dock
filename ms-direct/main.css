@@ -5,14 +5,6 @@
     grid-template-rows: repeat(3, calc(100% / 3));
 }
 
-.service {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    color: var(--symbol-color);
-    font-size: 2.5rem;
-}
-
 .service:nth-child(-n + 3) {
     border-bottom: var(--border);
 }
