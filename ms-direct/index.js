@@ -1,28 +1,36 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
+
+    var inputOrder = $('#orders-slider-input');
+    var inputPick = $('#picks-slider-input');
+    var sliderOrder = $('#orders-slider');
+    var sliderPick = $('#picks-slider');
+
+    inputOrder.prop('readonly', true);
+    inputPick.prop('readonly', true);
   
-    $("#orders-slider").slider({
+    sliderOrder.slider({
         range: "min",
         value: 200,
         min: 1,
         max: 1000,
         step: 1,
         slide: function (event, ui) {
-            $("#orders-slider-input").val(ui.value);
+            inputOrder.val(ui.value);
         }
     });
-    $("#orders-slider-input").val($("#orders-slider").slider("value"));
+    inputOrder.val(sliderOrder.slider("value"));
 
-    $("#picks-slider").slider({
+    sliderPick.slider({
         range: "min",
         value: 5,
         min: 1,
         max: 12,
         step: 1,
         slide: function (event, ui) {
-            $("#picks-slider-input").val(ui.value);
+            inputPick.val(ui.value);
         }
     });
-    $("#picks-slider-input").val($("#picks-slider").slider("value"));
+    inputPick.val(sliderPick.slider("value"));
 
 });
