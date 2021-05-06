@@ -1,16 +1,16 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
-    console.log("x");
   
     $("#orders-slider").slider({
         value: 100,
-        min: 0,
-        max: 500,
-        step: 50,
+        min: 1,
+        max: 1000,
+        step: 1,
         slide: function (event, ui) {
             $("#orders-slider-input").val("$" + ui.value);
         }
     });
+
     $("#orders-slider-input").val("$" + $("#orders-slider").slider("value"));
 
 });
