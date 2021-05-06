@@ -16,9 +16,14 @@
 }
 
 /* Slider on Form */
-.ui-slider-handle {
-    width: 2em;
-    left: -0.6em;
-    text-decoration: none;
-    text-align: center;
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-widget-content {
+    background: #c5ccdf;
+}
+
+.ui-widget-header {
+    background: #293F78;
 }
