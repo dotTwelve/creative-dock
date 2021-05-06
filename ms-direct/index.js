@@ -2,6 +2,7 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
   
     $("#orders-slider").slider({
+        range: "min",
         value: 200,
         min: 1,
         max: 1000,
@@ -13,6 +14,7 @@ Webflow.push(function () {
     $("#orders-slider-input").val($("#orders-slider").slider("value"));
 
     $("#picks-slider").slider({
+        range: "min",
         value: 5,
         min: 1,
         max: 12,
