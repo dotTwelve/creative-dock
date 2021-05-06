@@ -1,5 +1,4 @@
-var Webflow = Webflow || [];
-Webflow.push(function () {
+$(function () {
 
     $("#orders-slider").slider({
         value: 100,
