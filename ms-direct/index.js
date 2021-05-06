@@ -22,6 +22,7 @@ Webflow.push(function () {
         ],
         backSelector: '#back'
     });
+    new AWF.Logic({ logicList: [{ conditions: [{ selector: '#Name', operator: 'empty' }], operator: 'and', actions: [{ selector: '#Name', action: 'show', clear: false }] }], submitHiddenInputs: false, checkConditionsOnLoad: true });
 
     var inputOrder = $('#orders-slider-input');
     var inputPick = $('#picks-slider-input');
