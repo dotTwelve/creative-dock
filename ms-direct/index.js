@@ -20,7 +20,8 @@ Webflow.push(function () {
                 text: 'Continue'
             }
         ],
-        backSelector: '#back'
+        backSelector: '#back',
+        warningClass: 'warning'
     });
     new AWF.Logic({ logicList: [{ conditions: [{ selector: '#Name', operator: 'empty' }], operator: 'and', actions: [{ selector: '#Name', action: 'require', clear: false }] }], submitHiddenInputs: false, checkConditionsOnLoad: false });
 
