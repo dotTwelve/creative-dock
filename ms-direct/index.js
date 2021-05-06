@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
 
     $("#orders-slider").slider({
         value: 100,
