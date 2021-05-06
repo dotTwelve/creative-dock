@@ -1,6 +1,8 @@
-$(document).ready(function () {
-
-    $("#orders-slider").slider({
+var Webflow = Webflow || [];
+Webflow.push(function () {
+    console.log("x");
+  
+    /*$("#orders-slider").slider({
         value: 100,
         min: 0,
         max: 500,
@@ -9,6 +11,6 @@ $(document).ready(function () {
             $("#orders-slider-input").val("$" + ui.value);
         }
     });
-    $("#orders-slider-input").val("$" + $("#orders-slider").slider("value"));
+    $("#orders-slider-input").val("$" + $("#orders-slider").slider("value"));*/
 
 });
