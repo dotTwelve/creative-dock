@@ -27,3 +27,7 @@
 .ui-widget-header {
     background: #293F78;
 }
+
+.ui-corner-all {
+    border-radius: 8px;
+}
