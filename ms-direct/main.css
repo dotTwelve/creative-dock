@@ -38,9 +38,11 @@
     background: url("https://uploads-ssl.webflow.com/6090e6deeecdc6f86877cfc5/6093cb77dd7fae312f533140_slider-handle.svg");
     width: 68px;
     height: 52px;
+    outline: none;
 }
 
 .ui-slider-horizontal .ui-slider-handle {
     top: -16px;
     margin-left: -34px;
+    cursor: pointer;
 }
