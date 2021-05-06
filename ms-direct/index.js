@@ -1,6 +1,8 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
+    new AWF.MSF({hiddeButtonsOnSubmit: true, scrollTopOnStepChange: false, nextSelector: '#next', formSelector: '#wf-form-Survey'});
+
     var inputOrder = $('#orders-slider-input');
     var inputPick = $('#picks-slider-input');
     var sliderOrder = $('#orders-slider');
