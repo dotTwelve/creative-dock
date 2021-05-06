@@ -1,17 +1,24 @@
-
-
+/* Grid on Homepage */
 .service:nth-child(-n + 3) {
-    border-bottom: 1px solid #DADADA;
+    border-bottom: 1px solid #dadada;
 }
 
 .service:nth-child(3n + 1) {
-    border-right: 1px solid #DADADA;
+    border-right: 1px solid #dadada;
 }
 
 .service:nth-child(3n) {
-    border-left: 1px solid #DADADA;
+    border-left: 1px solid #dadada;
 }
 
 .service:nth-child(n + 7) {
-    border-top: 1px solid #DADADA;
+    border-top: 1px solid #dadada;
+}
+
+/* Slider on Form */
+.ui-slider-handle {
+    width: 2em;
+    left: -0.6em;
+    text-decoration: none;
+    text-align: center;
 }
