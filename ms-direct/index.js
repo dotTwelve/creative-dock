@@ -22,7 +22,7 @@ Webflow.push(function () {
         ],
         backSelector: '#back'
     });
-    new AWF.Logic({logicList: [{conditions: [{selector: '#Name', operator: 'empty'}], operator: 'and', actions: [{selector: '#Name', action: 'require', clear: false}]}], submitHiddenInputs: false, checkConditionsOnLoad: true});
+    new AWF.Logic({ logicList: [{ conditions: [{ selector: '#Name', operator: 'empty' }], operator: 'and', actions: [{ selector: '#Name', action: 'require', clear: false }] }], submitHiddenInputs: false, checkConditionsOnLoad: false });
 
     var inputOrder = $('#orders-slider-input');
     var inputPick = $('#picks-slider-input');
