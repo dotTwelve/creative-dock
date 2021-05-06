@@ -1,7 +1,26 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
-    new AWF.MSF({hiddeButtonsOnSubmit: true, scrollTopOnStepChange: false, nextSelector: '#next', formSelector: '#wf-form-Survey'});
+    new AWF.MSF({
+        hiddeButtonsOnSubmit: true,
+        scrollTopOnStepChange: false,
+        nextSelector: '#next',
+        formSelector: '#wf-form-Survey',
+        nextText: [
+            {
+                step: '1',
+                text: 'Continue'
+            },
+            {
+                step: '2',
+                text: 'Continue'
+            },
+            {
+                step: '3',
+                text: 'Continue'
+            }
+        ]
+    });
 
     var inputOrder = $('#orders-slider-input');
     var inputPick = $('#picks-slider-input');
@@ -10,7 +29,7 @@ Webflow.push(function () {
 
     inputOrder.prop('readonly', true).val(200);
     inputPick.prop('readonly', true).val(5);
-  
+
     sliderOrder.slider({
         range: "min",
         value: 200,
