@@ -19,7 +19,8 @@ Webflow.push(function () {
                 step: '3',
                 text: 'Continue'
             }
-        ]
+        ],
+        backSelector: '#back'
     });
 
     var inputOrder = $('#orders-slider-input');
