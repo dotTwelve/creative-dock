@@ -6,8 +6,8 @@ Webflow.push(function () {
     var sliderOrder = $('#orders-slider');
     var sliderPick = $('#picks-slider');
 
-    inputOrder.prop('readonly', true);
-    inputPick.prop('readonly', true);
+    inputOrder.prop('readonly', true).val(200);
+    inputPick.prop('readonly', true).val(5);
   
     sliderOrder.slider({
         range: "min",
