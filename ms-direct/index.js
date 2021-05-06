@@ -7,10 +7,10 @@ Webflow.push(function () {
         max: 1000,
         step: 1,
         slide: function (event, ui) {
-            $("#orders-slider-input").val("$" + ui.value);
+            $("#orders-slider-input").val(ui.value);
         }
     });
 
-    $("#orders-slider-input").val("$" + $("#orders-slider").slider("value"));
+    $("#orders-slider-input").val($("#orders-slider").slider("value"));
 
 });
