@@ -25,14 +25,22 @@
 }
 
 .ui-widget-header {
-    background: #293F78;
+    background: #293f78;
 }
 
 .ui-corner-all {
     border-radius: 8px;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default {
+.ui-state-default,
+.ui-widget-content .ui-state-default {
     border: none;
-    background: url("https://uploads-ssl.webflow.com/6090e6deeecdc6f86877cfc5/6093cb77dd7fae312f533140_slider-handle.svg") no-repeat fixed center;
+    background: url("https://uploads-ssl.webflow.com/6090e6deeecdc6f86877cfc5/6093cb77dd7fae312f533140_slider-handle.svg");
+    width: 68px;
+    height: 52px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -16px;
+    margin-left: -34px;
 }
