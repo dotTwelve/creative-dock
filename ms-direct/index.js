@@ -3,7 +3,7 @@ Webflow.push(function () {
 
     new AWF.MSF({
         hiddeButtonsOnSubmit: true,
-        scrollTopOnStepChange: true,
+        scrollTopOnStepChange: false,
         nextSelector: '#next',
         formSelector: '#wf-form-Survey',
         nextText: [
