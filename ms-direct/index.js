@@ -79,7 +79,7 @@ Webflow.push(function () {
                 $button.addClass(className);*/
                 $("html, body").animate({ scrollTop: 0 }, "slow");
                 console.log(index);
-                console.log($(".form-nav-bullets-bullet").attr( "data-msf-nav", index ));
+                console.log( $(".form-nav-bullets-bullet").find(`[data-msf-nav='${index}']`) );
             }
         }
     });
