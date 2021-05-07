@@ -78,9 +78,10 @@ Webflow.push(function () {
                 /*var className = "step-" + index;
                 $button.addClass(className);*/
                 $("html, body").animate({ scrollTop: 0 }, "slow");
-                
-                $(".form-nav-bullets-bullet").removeClass("active");
+
+                $(".form-nav-bullets-bullet").removeClass("active");    
                 var currentBullet = $(".form-nav-bullets-bullet").find(`[data-msf-nav='${index}']`);
+                console.log(currentBullet);
                 currentBullet.addClass("active");
             }
         }
