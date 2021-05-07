@@ -89,7 +89,7 @@ Webflow.push(function () {
 
                 if (index === 0) {
                     console.log("x");
-                    backButton.attr("href", "/");
+                    //backButton.attr("href", "/");
                 }
 
 
