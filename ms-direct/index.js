@@ -1,9 +1,11 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
-    $(window).bind('beforeunload', function () {
-        return 'Are you sure you want to leave?';
-    });
+    if ($('#survey').length > 0) {
+        $(window).bind('beforeunload', function () {
+            return 'Are you sure you want to leave?';
+        });
+    }
 
     new AWF.MSF({
         hiddeButtonsOnSubmit: true,
