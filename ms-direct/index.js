@@ -85,8 +85,6 @@ Webflow.push(function () {
                 var currentBullet = $(".form-nav-bullets-bullet");
                 $(currentBullet[index]).addClass("active");
 
-                var backButton = $("#back");
-
                 if (index > 0) {
                     backButton.show();
                 } else {
