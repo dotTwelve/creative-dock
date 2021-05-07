@@ -34,7 +34,7 @@ Webflow.push(function () {
     });
     new AWF.Logic({ logicList: [{ conditions: [{ selector: '#Name', operator: 'empty' }], operator: 'and', actions: [{ selector: '#Name', action: 'require', clear: false }] }], submitHiddenInputs: false, checkConditionsOnLoad: false });
 
-    //var backButton = $('#back').css({pointerEvents: "auto"});
+    var backButton = $('#back').hide();
     var inputOrder = $('#orders-slider-input');
     var inputPick = $('#picks-slider-input');
     var sliderOrder = $('#orders-slider');
@@ -87,11 +87,11 @@ Webflow.push(function () {
 
                 var backButton = $("#back");
 
-                if (index === 0) {
-                    console.log("x");
-                    //backButton.attr("href", "/");
+                if (index > 0) {
+                    backButton.show();
+                } else {
+                    backButton.hide();
                 }
-
 
             }
         }
