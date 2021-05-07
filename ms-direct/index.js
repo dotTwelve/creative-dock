@@ -80,9 +80,9 @@ Webflow.push(function () {
                 $("html, body").animate({ scrollTop: 0 }, "slow");
 
                 $(".form-nav-bullets-bullet").removeClass("active");    
-                var currentBullet = $(".form-nav-bullets-bullet")[index];
-                console.log(currentBullet);
-                currentBullet.addClass("active");
+                var currentBullet = $(".form-nav-bullets-bullet");
+                console.log(currentBullet[index]);
+                currentBullet[index].addClass("active");
             }
         }
     });
