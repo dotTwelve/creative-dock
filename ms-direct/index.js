@@ -27,7 +27,8 @@ Webflow.push(function () {
             }
         ],
         backSelector: '#back',
-        warningClass: 'warning'
+        warningClass: 'warning',
+        currentStepSelector: '#current-step'
     });
     new AWF.Logic({ logicList: [{ conditions: [{ selector: '#Name', operator: 'empty' }], operator: 'and', actions: [{ selector: '#Name', action: 'require', clear: false }] }], submitHiddenInputs: false, checkConditionsOnLoad: false });
 
