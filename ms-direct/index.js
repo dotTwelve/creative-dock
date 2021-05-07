@@ -82,7 +82,7 @@ Webflow.push(function () {
                 $(".form-nav-bullets-bullet").removeClass("active");    
                 var currentBullet = $(".form-nav-bullets-bullet");
                 console.log(currentBullet[index]);
-                currentBullet[index].addClass("active");
+                $(currentBullet[index]).addClass("active");
             }
         }
     });
