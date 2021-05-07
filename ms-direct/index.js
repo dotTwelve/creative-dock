@@ -87,9 +87,7 @@ Webflow.push(function () {
 
                 var backButton = $("#back");
 
-                if (index > 0) {
-                    //backButton.attr("href", "#");
-                } else {
+                if (index === 0) {
                     backButton.attr("href", "/");
                 }
 
