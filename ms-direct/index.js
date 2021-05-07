@@ -72,12 +72,14 @@ Webflow.push(function () {
             if (event.attributeName === "tabindex") {
                 /*$button.removeClass(function (index, css) {
                     return (css.match(/(^|\s)step-\S+/g) || []).join(' ');
-                });
+                });*/
 
                 index = $(".w-slider-dot.w-active").index();
-                var className = "step-" + index;
+                /*var className = "step-" + index;
                 $button.addClass(className);*/
                 $("html, body").animate({ scrollTop: 0 }, "slow");
+                console.log(index);
+                console.log($(".form-nav-bullets-bullet").attr( "data-msf-nav", index ));
             }
         }
     });
