@@ -7,6 +7,10 @@ Webflow.push(function () {
                 return 'Are you sure you want to leave?';
             });
         });
+        
+        $(document).on("submit", "form", function (event) {
+            window.onbeforeunload = null;
+        });
     }
 
 });
