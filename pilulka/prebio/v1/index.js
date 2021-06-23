@@ -94,11 +94,12 @@ Webflow.push(function () {
         }
     });
 
-    $(document).on('keypress', function (e) {
-        if (e.which == 13) {
-            var next = '#next-' + currentSlide;
-            console.log(next);
-            //$().trigger('click');
+    $('#wf-form-Survey-Form').on("keypress", function (event) {
+        console.log("aaya");
+        var keyPressed = event.keyCode || event.which;
+        if (keyPressed === 13) {
+            event.preventDefault();
+            return false;
         }
     });
 
