@@ -3,6 +3,14 @@ Webflow.push(function () {
 
     $('#next-1').prop("disabled", true);
 
+    $('#Name').blur(function () {
+        if (!$(this).val()) {
+            $('#next-1').addClass('disabled');
+        } else {
+            $('#next-1').removeClass('disabled');
+        }
+    });
+
     $('#next-1').click(function (e) {
         e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
@@ -34,5 +42,7 @@ Webflow.push(function () {
             }
         }
     });
+
+
 
 });
