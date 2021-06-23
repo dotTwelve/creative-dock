@@ -1,6 +1,7 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
+    var currentSlide = 0;
     var name = false;
     var age = false;
 
@@ -26,7 +27,7 @@ Webflow.push(function () {
 
     $('#next-1').click(function (e) {
         if (!name) {
-            alert('Musíte vyplnit jméno.');
+            alert('Jak se jmenujete?');
             return;
         }
         e.preventDefault();
@@ -42,7 +43,7 @@ Webflow.push(function () {
     });
     $('#next-3').click(function (e) {
         if (!age) {
-            alert('Musíte vyplnit věk.');
+            alert('Kolik je vám let?');
             return;
         }
         e.preventDefault();
@@ -75,7 +76,13 @@ Webflow.push(function () {
     $('#prev-6').click(function (e) {
         e.preventDefault();
         $('.w-round div:nth-child(5)').trigger('tap');
-    }); 
+    });
+
+    $(document).on('keypress', function (e) {
+        if (e.which == 13) {
+            alert('You pressed enter!');
+        }
+    });
 
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
@@ -83,7 +90,7 @@ Webflow.push(function () {
             if (event.attributeName === "tabindex") {
 
                 index = $(".w-slider-dot.w-active").index();
-                console.log(index);
+                currentSlide = index;
 
             }
         }
