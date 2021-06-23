@@ -14,7 +14,10 @@ Webflow.push(function () {
     });
 
     $('#next-1').click(function (e) {
-        if (!name) return;
+        if (!name) {
+            alert ('Musíte vyplnit jméno.');
+            return;
+        }
         e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
     });
