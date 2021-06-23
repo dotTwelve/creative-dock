@@ -1,7 +1,7 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
-    var currentSlide = 0;
+    var currentSlide = 1;
     var name = false;
     var age = false;
 
@@ -78,21 +78,23 @@ Webflow.push(function () {
         $('.w-round div:nth-child(5)').trigger('tap');
     });
 
-    $(document).on('keypress', function (e) {
-        if (e.which == 13) {
-            alert('You pressed enter!');
-        }
-    });
-
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
         callback: function (event) {
             if (event.attributeName === "tabindex") {
 
                 index = $(".w-slider-dot.w-active").index();
-                currentSlide = index;
+                currentSlide = index + 1;
 
             }
+        }
+    });
+
+    $(document).on('keypress', function (e) {
+        var goTo = currentSlide + 1;
+
+        if (e.which == 13) {
+            $('.w-round div:nth-child('+ goTo +')').trigger('tap');
         }
     });
 
