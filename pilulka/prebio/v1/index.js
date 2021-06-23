@@ -94,7 +94,7 @@ Webflow.push(function () {
         var goTo = currentSlide + 1;
 
         if (e.which == 13) {
-            $('.w-round div:nth-child('+ goTo +')').trigger('tap');
+            $('#next-'+ goTo +'').trigger('tap');
         }
     });
 
