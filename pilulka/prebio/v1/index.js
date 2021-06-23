@@ -21,10 +21,6 @@ Webflow.push(function () {
 
                 index = $(".w-slider-dot.w-active").index();
 
-                $(".counter-bullets-bullet").removeClass("active");
-                var currentBullet = $(".counter-bullets-bullet");
-                $(currentBullet[index]).addClass("active");
-
             }
         }
     });
