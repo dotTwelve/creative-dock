@@ -81,6 +81,14 @@ Webflow.push(function () {
         e.preventDefault();
         $('.w-round div:nth-child(5)').trigger('tap');
     });
+    $('#next-7').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(8)').trigger('tap');
+    });
+    $('#prev-7').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(6)').trigger('tap');
+    });
 
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
