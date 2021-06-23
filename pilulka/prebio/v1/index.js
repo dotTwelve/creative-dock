@@ -25,56 +25,60 @@ Webflow.push(function () {
         }
     });
 
-    $('#next-1').click(function (e) {
+    function next() {
+
+    }
+
+    $('#next-1').on( "click", function() {
         if (!name) {
             alert('Jak se jmenujete?');
             return;
         }
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
     });
-    $('#next-2').click(function (e) {
-        e.preventDefault();
+    $('#next-2').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(3)').trigger('tap');
     });
-    $('#prev-2').click(function (e) {
-        e.preventDefault();
+    $('#prev-2').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(1)').trigger('tap');
     });
-    $('#next-3').click(function (e) {
+    $('#next-3').on( "click", function() {
         if (!age) {
             alert('Kolik je vám let?');
             return;
         }
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(4)').trigger('tap');
     });
-    $('#prev-3').click(function (e) {
-        e.preventDefault();
+    $('#prev-3').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
     });
-    $('#next-4').click(function (e) {
-        e.preventDefault();
+    $('#next-4').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(5)').trigger('tap');
     });
-    $('#prev-4').click(function (e) {
-        e.preventDefault();
+    $('#prev-4').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(3)').trigger('tap');
     });
-    $('#next-5').click(function (e) {
-        e.preventDefault();
+    $('#next-5').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(6)').trigger('tap');
     });
-    $('#prev-5').click(function (e) {
-        e.preventDefault();
+    $('#prev-5').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(4)').trigger('tap');
     });
-    $('#next-6').click(function (e) {
-        e.preventDefault();
+    $('#next-6').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(7)').trigger('tap');
     });
-    $('#prev-6').click(function (e) {
-        e.preventDefault();
+    $('#prev-6').on( "click", function() {
+        //e.preventDefault();
         $('.w-round div:nth-child(5)').trigger('tap');
     });
 
@@ -91,10 +95,8 @@ Webflow.push(function () {
     });
 
     $(document).on('keypress', function (e) {
-        var goTo = currentSlide + 1;
-
         if (e.which == 13) {
-            $('#next-'+ goTo +'').trigger('tap');
+            $('#next-'+ currentSlide +'').trigger('click');
         }
     });
 
