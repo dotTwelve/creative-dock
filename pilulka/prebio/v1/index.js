@@ -95,7 +95,6 @@ Webflow.push(function () {
     });
 
     $(document).on('keypress', function (e) {
-        e.preventDefault();
         if (e.which == 13) {
             var next = '#next-' + currentSlide;
             console.log(next);
