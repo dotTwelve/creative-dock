@@ -26,7 +26,7 @@ Webflow.push(function () {
 
     $('#next-1').click(function (e) {
         if (!name) {
-            alert ('Musíte vyplnit jméno.');
+            alert('Musíte vyplnit jméno.');
             return;
         }
         e.preventDefault();
@@ -42,7 +42,7 @@ Webflow.push(function () {
     });
     $('#next-3').click(function (e) {
         if (!age) {
-            alert ('Musíte vyplnit věk.');
+            alert('Musíte vyplnit věk.');
             return;
         }
         e.preventDefault();
@@ -77,12 +77,17 @@ Webflow.push(function () {
         $('.w-round div:nth-child(5)').trigger('tap');
     });
 
+    if (e.keyCode == 13) {
+        //$('input[name = butAssignProd]').click();
+    }
+
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
         callback: function (event) {
             if (event.attributeName === "tabindex") {
 
                 index = $(".w-slider-dot.w-active").index();
+                console.log(index);
 
             }
         }
