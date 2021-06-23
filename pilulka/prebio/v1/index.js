@@ -1,13 +1,11 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
-    $('#next-1').prop("disabled", true);
-
-    $('#Name').blur(function () {
-        if (!$(this).val()) {
-            $('#next-1').addClass('disabled');
-        } else {
+    $('#Name').on('input', function () {
+        if ($(this).val() !== '') {
             $('#next-1').removeClass('disabled');
+        } else {
+            $('#next-1').addClass('disabled');
         }
     });
 
