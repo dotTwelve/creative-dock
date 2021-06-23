@@ -68,6 +68,14 @@ Webflow.push(function () {
         e.preventDefault();
         $('.w-round div:nth-child(4)').trigger('tap');
     });
+    $('#next-6').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(7)').trigger('tap');
+    });
+    $('#prev-6').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(5)').trigger('tap');
+    });
 
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
