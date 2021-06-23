@@ -97,8 +97,9 @@ Webflow.push(function () {
     $(document).on('keypress', function (e) {
         e.preventDefault();
         if (e.which == 13) {
-            console.log(currentSlide);
-            //$('#next-'+ currentSlide).trigger('click');
+            var next = '#next-' + currentSlide;
+            console.log(next);
+            //$().trigger('click');
         }
     });
 
