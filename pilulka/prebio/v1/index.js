@@ -1,9 +1,17 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
-    $('#step-1').click(function (e) {
+    $('#next-1').click(function (e) {
         e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
+    });
+    $('#next-2').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(3)').trigger('tap');
+    });
+    $('#prev-2').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(1)').trigger('tap');
     });
 
     $(".w-slider-dot.w-active").attrchange({
