@@ -75,11 +75,7 @@ Webflow.push(function () {
     $('#prev-6').click(function (e) {
         e.preventDefault();
         $('.w-round div:nth-child(5)').trigger('tap');
-    });
-
-    if (e.keyCode == 13) {
-        //$('input[name = butAssignProd]').click();
-    }
+    }); 
 
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
