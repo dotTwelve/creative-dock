@@ -4,7 +4,7 @@ Webflow.push(function () {
     var name = false;
     var age = false;
 
-    $('#Name').on('input', function () {
+    $('#Question-1').on('input', function () {
         if ($(this).val() !== '') {
             $('#next-1').removeClass('disabled');
             name = true;
@@ -14,7 +14,7 @@ Webflow.push(function () {
         }
     });
 
-    $('#Age').on('input', function () {
+    $('#Question-3').on('input', function () {
         if ($(this).val() !== '') {
             $('#next-3').removeClass('disabled');
             age = true;
