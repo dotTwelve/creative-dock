@@ -1,6 +1,8 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
+    $('#next-1').prop("disabled", true);
+
     $('#next-1').click(function (e) {
         e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
