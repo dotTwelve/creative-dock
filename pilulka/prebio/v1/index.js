@@ -95,8 +95,10 @@ Webflow.push(function () {
     });
 
     $(document).on('keypress', function (e) {
+        e.preventDefault();
         if (e.which == 13) {
-            $('#next-'+ currentSlide).trigger('click');
+            console.log(currentSlide);
+            //$('#next-'+ currentSlide).trigger('click');
         }
     });
 
