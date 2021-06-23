@@ -1,9 +1,9 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
 
-    $('#step-0').click(function (e) {
+    $('#step-1').click(function (e) {
         e.preventDefault();
-        $('.w-round:nth-child(1)').trigger('tap');
+        $('.w-round:nth-child(2)').trigger('tap');
     });
 
     $(".w-slider-dot.w-active").attrchange({
