@@ -13,6 +13,14 @@ Webflow.push(function () {
         e.preventDefault();
         $('.w-round div:nth-child(1)').trigger('tap');
     });
+    $('#next-3').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(4)').trigger('tap');
+    });
+    $('#prev-3').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(2)').trigger('tap');
+    });
 
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
