@@ -52,6 +52,22 @@ Webflow.push(function () {
         e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
     });
+    $('#next-4').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(5)').trigger('tap');
+    });
+    $('#prev-4').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(3)').trigger('tap');
+    });
+    $('#next-5').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(6)').trigger('tap');
+    });
+    $('#prev-5').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(4)').trigger('tap');
+    });
 
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
