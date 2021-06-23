@@ -95,10 +95,10 @@ Webflow.push(function () {
     });
 
     $('#wf-form-Survey-Form').on("keypress", function (event) {
-        console.log("aaya");
         var keyPressed = event.keyCode || event.which;
         if (keyPressed === 13) {
             event.preventDefault();
+            $('#next-' + currentSlide).trigger('click');
             return false;
         }
     });
