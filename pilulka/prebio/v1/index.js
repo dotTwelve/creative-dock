@@ -3,7 +3,7 @@ Webflow.push(function () {
 
     $('#step-1').click(function (e) {
         e.preventDefault();
-        $('.w-round:nth-child(2)').trigger('tap');
+        $('.w-round div:nth-child(2)').trigger('tap');
     });
 
     $(".w-slider-dot.w-active").attrchange({
