@@ -2,6 +2,7 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
 
     var name = false;
+    var age = false;
 
     $('#Name').on('input', function () {
         if ($(this).val() !== '') {
@@ -10,6 +11,16 @@ Webflow.push(function () {
         } else {
             $('#next-1').addClass('disabled');
             name = false;
+        }
+    });
+
+    $('#Age').on('input', function () {
+        if ($(this).val() !== '') {
+            $('#next-3').removeClass('disabled');
+            age = true;
+        } else {
+            $('#next-3').addClass('disabled');
+            age = false;
         }
     });
 
@@ -30,6 +41,10 @@ Webflow.push(function () {
         $('.w-round div:nth-child(1)').trigger('tap');
     });
     $('#next-3').click(function (e) {
+        if (!age) {
+            alert ('Musíte vyplnit věk.');
+            return;
+        }
         e.preventDefault();
         $('.w-round div:nth-child(4)').trigger('tap');
     });
