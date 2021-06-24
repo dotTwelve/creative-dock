@@ -144,6 +144,11 @@ Webflow.push(function () {
         $('.w-round div:nth-child(12)').trigger('tap');
     });
 
+    $('#next-14').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(15)').trigger('tap');
+    });
+
     $(".w-slider-dot.w-active").attrchange({
         trackValues: true,
         callback: function (event) {
