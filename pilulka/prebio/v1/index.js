@@ -150,7 +150,7 @@ Webflow.push(function () {
     });
 
     $(".w-slider-dot.w-active").attrchange({
-        trackValues: true,
+        trackValues: true, 
         callback: function (event) {
             if (event.attributeName === "tabindex") {
 
