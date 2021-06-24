@@ -31,6 +31,7 @@ Webflow.push(function () {
 
     $('#next-1').click(function (e) {
         if (!name) {
+            $('#Question-1').focus();
             alert('Jak se jmenujete?');
             return;
         }
@@ -47,6 +48,7 @@ Webflow.push(function () {
     });
     $('#next-3').click(function (e) {
         if (!age) {
+            $('#Question-3').focus();
             alert('Kolik je vám let?');
             return;
         }
@@ -165,6 +167,7 @@ Webflow.push(function () {
 
                 if (currentSlide == 14 || currentSlide == 15) {
                     $('#Footer').removeClass('hidden');
+                    
                 } else {
                     $('#Footer').addClass('hidden');    
                 }
