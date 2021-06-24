@@ -85,9 +85,63 @@ Webflow.push(function () {
         e.preventDefault();
         $('.w-round div:nth-child(8)').trigger('tap');
     });
-    $('#prev-7').click(function (e) {
+    $('#prev-7').click(function (e) {   
         e.preventDefault();
         $('.w-round div:nth-child(6)').trigger('tap');
+    });
+
+    $('#next-8').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(9)').trigger('tap');
+    });
+    $('#prev-8').click(function (e) {   
+        e.preventDefault();
+        $('.w-round div:nth-child(7)').trigger('tap');
+    });
+
+    $('#next-9').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(10)').trigger('tap');
+    });
+    $('#prev-9').click(function (e) {   
+        e.preventDefault();
+        $('.w-round div:nth-child(8)').trigger('tap');
+    });
+
+    $('#next-10').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(11)').trigger('tap');
+    });
+    $('#prev-10').click(function (e) {   
+        e.preventDefault();
+        $('.w-round div:nth-child(9)').trigger('tap');
+    });
+
+    $('#next-11').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(12)').trigger('tap');
+    });
+    $('#prev-11').click(function (e) {   
+        e.preventDefault();
+        $('.w-round div:nth-child(10)').trigger('tap');
+    });
+
+    $('#next-12').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(13)').trigger('tap');
+    });
+    $('#prev-12').click(function (e) {   
+        e.preventDefault();
+        $('.w-round div:nth-child(11)').trigger('tap');
+    });
+
+    $('#next-13').click(function (e) {
+        e.preventDefault();
+        $('.w-round div:nth-child(14)').trigger('tap');
+    });
+    $('#prev-13').click(function (e) {   
+        e.preventDefault();
+        $('.w-round div:nth-child(12)').trigger('tap');
     });
 
     $(".w-slider-dot.w-active").attrchange({
