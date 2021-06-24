@@ -145,7 +145,7 @@ Webflow.push(function () {
     });
 
     $('#next-14').click(function (e) {
-        e.preventDefault();
+        e.preventDefault(); 
         $('.w-round div:nth-child(15)').trigger('tap');
     });
 
