@@ -163,6 +163,12 @@ Webflow.push(function () {
                     $('body').removeClass('background');
                 }
 
+                if (currentSlide == 14 || currentSlide == 15) {
+                    $('#Footer').remnoveClass('hidden');
+                } else {
+                    $('#Footer').addClass('hidden');
+                }
+
             }
         }
     });
