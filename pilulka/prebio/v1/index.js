@@ -157,6 +157,12 @@ Webflow.push(function () {
                 index = $(".w-slider-dot.w-active").index();
                 currentSlide = index + 1;
 
+                if (currentSlide == 14) {
+                    $('body').addClass('background');
+                } else {
+                    $('body').removeClass('background');
+                }
+
             }
         }
     });
