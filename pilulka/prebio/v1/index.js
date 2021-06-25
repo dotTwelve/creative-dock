@@ -167,9 +167,11 @@ Webflow.push(function () {
 
                 if (currentSlide == 14 || currentSlide == 15) {
                     $('#Footer').removeClass('hidden');
+                    $('#FooterInfo').hide();
                     
                 } else {
-                    $('#Footer').addClass('hidden');    
+                    $('#Footer').addClass('hidden');
+                    $('#FooterInfo').show();
                 }
 
             }
