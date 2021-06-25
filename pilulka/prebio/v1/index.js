@@ -46,10 +46,7 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-4]').on('change', function (e) {
-        //$("[name='chk[]']:checked").length
-        console.log($('input[name^=Question-4]:checked').length);
-        console.log(this);
-        console.log(e);
+        if (!$('input[name^=Question-4]:checked').length) return;
         $('#nex t-4').removeClass('disabled');
         step4 = true;
     });
@@ -75,6 +72,7 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-9]').on('change', function () {
+        if (!$('input[name^=Question-9]:checked').length) return;
         $('#next-9').removeClass('disabled');
         step9 = true;
     });
@@ -85,6 +83,7 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-11]').on('change', function () {
+        if (!$('input[name^=Question-11]:checked').length) return;
         $('#next-11').removeClass('disabled');
         step11 = true;
     });
@@ -95,6 +94,7 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-13]').on('change', function () {
+        if (!$('input[name^=Question-13]:checked').length) return;
         $('#next-13').removeClass('disabled');
         step13 = true;
     });
