@@ -159,7 +159,7 @@ Webflow.push(function () {
                 index = $(".w-slider-dot.w-active").index();
                 currentSlide = index + 1;
 
-                dCurrentSlide = $('.w-slide')[index];
+                dCurrentSlide = $('.w-slide:nth-child('+currentSlide+')');
                 console.log(dCurrentSlide.height());
 
                 if (currentSlide == 14) {
