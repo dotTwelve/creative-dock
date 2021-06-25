@@ -163,10 +163,10 @@ Webflow.push(function () {
                 currentSlide = index + 1;
 
                 dCurrentSlide = $('.w-slide:nth-child(' + currentSlide + ')');
-                height = dCurrentSlide.height();
+                newHeight = dCurrentSlide.height();
 
                 $('#w-slider-mask-0').height("auto");
-                $('#w-slider-mask-0').height(height);
+                $('#w-slider-mask-0').height(newHeight);
 
                 if (currentSlide == 14) {
                     $('body').addClass('background');
