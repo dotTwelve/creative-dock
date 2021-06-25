@@ -164,12 +164,9 @@ Webflow.push(function () {
                 currentSlide = index + 1;
 
                 dCurrentSlide = $('.w-slide:nth-child(' + currentSlide + ')');
+                
+                $('#w-slider-mask-0').height("auto");
                 newHeight = dCurrentSlide.height();
-
-                console.log(newHeight);
-                console.log($('#w-slider-mask-0'));
-
-                //$('#w-slider-mask-0').height("auto");
                 $('#w-slider-mask-0').height(newHeight);
 
                 if (currentSlide == 14) {
