@@ -2,30 +2,35 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
 
     var currentSlide = 1;
-    var name = false;
-    var age = false;
+    var step1 = false;
+    var step2 = false;
+    var step3 = false;
 
-    
+
     var height = $('.w-slide:nth-child(' + currentSlide + ')').height();
     $('#w-slider-mask-0').height(height);
 
     $('#Question-1').on('input', function () {
         if ($(this).val() !== '') {
             $('#next-1').removeClass('disabled');
-            name = true;
+            step1 = true;
         } else {
             $('#next-1').addClass('disabled');
-            name = false;
+            step1 = false;
         }
+    });
+
+    $('input[type=radio][name=Question-2]').on('change', function () {
+        step2 = true;
     });
 
     $('#Question-3').on('input', function () {
         if ($(this).val() !== '') {
             $('#next-3').removeClass('disabled');
-            age = true;
+            step3 = true;
         } else {
             $('#next-3').addClass('disabled');
-            age = false;
+            step3 = false;
         }
     });
 
@@ -34,7 +39,7 @@ Webflow.push(function () {
     }
 
     $('#next-1').click(function (e) {
-        if (!name) {
+        if (!step1) {
             $('#Question-1').focus();
             alert('Jak se jmenujete?');
             return;
@@ -51,7 +56,7 @@ Webflow.push(function () {
         $('.w-round div:nth-child(1)').trigger('tap');
     });
     $('#next-3').click(function (e) {
-        if (!age) {
+        if (!step3) {
             $('#Question-3').focus();
             alert('Kolik je vám let?');
             return;
@@ -145,7 +150,7 @@ Webflow.push(function () {
         e.preventDefault();
         $('.w-round div:nth-child(14)').trigger('tap');
     });
-    $('#prev-13').click(function (e) {  
+    $('#prev-13').click(function (e) {
         e.preventDefault();
         $('.w-round div:nth-child(12)').trigger('tap');
     });
@@ -164,10 +169,10 @@ Webflow.push(function () {
                 currentSlide = index + 1;
 
                 dCurrentSlide = $('.w-slide:nth-child(' + currentSlide + ')');
-                
+
                 $('#w-slider-mask-0').height("auto");
                 height = dCurrentSlide.height();
-                $('#w-slider-mask-0').height(height);    
+                $('#w-slider-mask-0').height(height);
 
                 if (currentSlide == 14) {
                     $('body').addClass('background');
