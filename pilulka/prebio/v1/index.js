@@ -21,6 +21,7 @@ Webflow.push(function () {
     });
 
     $('input[type=radio][name=Question-2]').on('change', function () {
+        $('#next-2').removeClass('disabled');
         step2 = true;
     });
 
