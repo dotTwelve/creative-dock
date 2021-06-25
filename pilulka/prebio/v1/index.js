@@ -45,7 +45,8 @@ Webflow.push(function () {
         }
     });
 
-    $('input[name^=Question-4]').on('change', function (e) {
+    $('input[name^=Question-4]').on('change', function () {
+        console.log($('input[name^=Question-4]:checked').length);
         if ($('input[name^=Question-4]:checked').length > 0) {
             $('#next-4').removeClass('disabled');
             step4 = true;
