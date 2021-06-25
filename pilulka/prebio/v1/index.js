@@ -5,7 +5,7 @@ Webflow.push(function () {
     var name = false;
     var age = false;
 
-    var height = $('.w-slide:nth-child(1)').height();
+    var height = $('.w-slide:nth-child(' + currentSlide + ')').height();
     $('.w-slider-mask').height(height);
 
     $('#Question-1').on('input', function () {
