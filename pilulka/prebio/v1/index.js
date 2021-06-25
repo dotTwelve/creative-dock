@@ -42,13 +42,16 @@ Webflow.push(function () {
     $('#next-1').click(function (e) {
         if (!step1) {
             $('#Question-1').focus();
-            alert('Jak se jmenujete?');
+            //alert('Jak se jmenujete?');
             return;
         }
         e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
     });
     $('#next-2').click(function (e) {
+        if (!step2) {
+            return;
+        }
         e.preventDefault();
         $('.w-round div:nth-child(3)').trigger('tap');
     });
@@ -59,7 +62,7 @@ Webflow.push(function () {
     $('#next-3').click(function (e) {
         if (!step3) {
             $('#Question-3').focus();
-            alert('Kolik je vám let?');
+            //alert('Kolik je vám let?');
             return;
         }
         e.preventDefault();
