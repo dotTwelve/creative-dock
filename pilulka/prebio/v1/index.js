@@ -45,10 +45,12 @@ Webflow.push(function () {
         }
     });
 
-    $('input[name^=Question-4]').on('change', function () {
+    $('input[name^=Question-4]').on('change', function (e) {
         //$("[name='chk[]']:checked").length
         console.log($('input[name^=Question-4]:checked').length);
-        $('#next-4').removeClass('disabled');
+        console.log(this);
+        console.log(e);
+        $('#nex t-4').removeClass('disabled');
         step4 = true;
     });
 
