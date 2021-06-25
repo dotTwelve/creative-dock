@@ -6,8 +6,8 @@ Webflow.push(function () {
     var age = false;
 
     
-    //var height = $('.w-slide:nth-child(1)').height();
-    //$('#w-slider-mask-0').height(height);
+    var height = $('.w-slide:nth-child(' + currentSlide + ')').height();
+    $('#w-slider-mask-0').height(height);
 
     $('#Question-1').on('input', function () {
         if ($(this).val() !== '') {
@@ -166,8 +166,8 @@ Webflow.push(function () {
                 dCurrentSlide = $('.w-slide:nth-child(' + currentSlide + ')');
                 
                 $('#w-slider-mask-0').height("auto");
-                newHeight = dCurrentSlide.height();
-                $('#w-slider-mask-0').height(newHeight);
+                height = dCurrentSlide.height();
+                $('#w-slider-mask-0').height(height);    
 
                 if (currentSlide == 14) {
                     $('body').addClass('background');
