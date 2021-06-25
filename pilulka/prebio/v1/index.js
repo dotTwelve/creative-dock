@@ -145,7 +145,7 @@ Webflow.push(function () {
         e.preventDefault();
         $('.w-round div:nth-child(14)').trigger('tap');
     });
-    $('#prev-13').click(function (e) {
+    $('#prev-13').click(function (e) {  
         e.preventDefault();
         $('.w-round div:nth-child(12)').trigger('tap');
     });
@@ -169,8 +169,8 @@ Webflow.push(function () {
                 console.log(newHeight);
                 console.log($('#w-slider-mask-0'));
 
-                $('#w-slider-mask-0').height("auto");
-                $('#w-slider-mask-0').height(newHeight);
+                //$('#w-slider-mask-0').height("auto");
+                //$('#w-slider-mask-0').height(newHeight);
 
                 if (currentSlide == 14) {
                     $('body').addClass('background');
