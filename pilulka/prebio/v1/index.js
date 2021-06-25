@@ -46,6 +46,8 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-4]').on('change', function () {
+        //$("[name='chk[]']:checked").length
+        console.log($('input[name^=Question-4]:checked').length);
         $('#next-4').removeClass('disabled');
         step4 = true;
     });
