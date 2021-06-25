@@ -164,6 +164,7 @@ Webflow.push(function () {
 
                 dCurrentSlide = $('.w-slide:nth-child(' + currentSlide + ')');
                 newHeight = dCurrentSlide.height();
+                console.log(newHeight);
 
                 $('#w-slider-mask-0').height(newHeight);
 
