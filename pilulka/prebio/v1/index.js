@@ -65,7 +65,7 @@ Webflow.push(function () {
             //alert('Kolik je vám let?');
             return;
         }
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(4)').trigger('tap');
     });
     $('#prev-3').click(function (e) {
