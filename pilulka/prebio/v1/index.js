@@ -2,9 +2,9 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
 
     var currentSlide = 1;
-    var step1 = false;
-    var step2 = false;
-    var step3 = false;
+    var step1,
+        step2,
+        step3 = false;
 
 
     var height = $('.w-slide:nth-child(' + currentSlide + ')').height();
