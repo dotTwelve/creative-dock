@@ -122,17 +122,17 @@ Webflow.push(function () {
             //alert('Jak se jmenujete?');
             return;
         }
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
     });
 
     $('#next-2').click(function (e) {
         if (!step2) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(3)').trigger('tap');
     });
     $('#prev-2').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(1)').trigger('tap');
     });
 
@@ -142,116 +142,116 @@ Webflow.push(function () {
             //alert('Kolik je vám let?');
             return;
         }
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(4)').trigger('tap');
     });
     $('#prev-3').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(2)').trigger('tap');
     });
 
     $('#next-4').click(function (e) {
         if (!step4) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(5)').trigger('tap');
     });
     $('#prev-4').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(3)').trigger('tap');
     });
 
     $('#next-5').click(function (e) {
         if (!step5) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(6)').trigger('tap');
     });
     $('#prev-5').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(4)').trigger('tap');
     });
 
     $('#next-6').click(function (e) {
         if (!step6) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(7)').trigger('tap');
     });
     $('#prev-6').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(5)').trigger('tap');
     });
 
     $('#next-7').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(8)').trigger('tap');
     });
     $('#prev-7').click(function (e) {
         if (!step7) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(6)').trigger('tap');
     });
 
     $('#next-8').click(function (e) {
         if (!step8) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(9)').trigger('tap');
     });
     $('#prev-8').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(7)').trigger('tap');
     });
 
     $('#next-9').click(function (e) {
         if (!step9) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(10)').trigger('tap');
     });
     $('#prev-9').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(8)').trigger('tap');
     });
 
     $('#next-10').click(function (e) {
         if (!step10) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(11)').trigger('tap');
     });
     $('#prev-10').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(9)').trigger('tap');
     });
 
     $('#next-11').click(function (e) {
         if (!step11) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(12)').trigger('tap');
     });
     $('#prev-11').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(10)').trigger('tap');
     });
 
     $('#next-12').click(function (e) {
         if (!step12) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(13)').trigger('tap');
     });
     $('#prev-12').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(11)').trigger('tap');
     });
 
     $('#next-13').click(function (e) {
         if (!step13) return;
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(14)').trigger('tap');
     });
     $('#prev-13').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(12)').trigger('tap');
     });
 
     $('#next-14').click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.w-round div:nth-child(15)').trigger('tap');
     });
 
