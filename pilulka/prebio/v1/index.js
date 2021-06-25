@@ -49,6 +49,8 @@ Webflow.push(function () {
         if ($('input[name^=Question-4]:checked').length > 0) {
             $('#next-4').removeClass('disabled');
             step4 = true;
+        } else {
+            step4 = false;
         }
     });
 
@@ -76,6 +78,8 @@ Webflow.push(function () {
         if ($('input[name^=Question-9]:checked').length > 0) {
             $('#next-9').removeClass('disabled');
             step9 = true;
+        } else {
+            step9 = false;
         }
     });
 
@@ -88,6 +92,8 @@ Webflow.push(function () {
         if ($('input[name^=Question-11]:checked').length > 0) {
             $('#next-11').removeClass('disabled');
             step11 = true;
+        } else {
+            step11 = false;
         }
     });
 
@@ -100,6 +106,8 @@ Webflow.push(function () {
         if ($('input[name^=Question-13]:checked').length > 0) {
             $('#next-13').removeClass('disabled');
             step13 = true;
+        } else {
+            step13 = false;
         }
     });
 
