@@ -71,23 +71,28 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-8]').on('change', function () {
-        $('#next-8').removeClass('disabled');
-        step8 = true;
-    });
-
-    $('input[name^=Question-9]').on('change', function () {
-        if ($('input[name^=Question-9]:checked').length > 0) {
-            $('#next-9').removeClass('disabled');
-            step9 = true;
+        if ($('input[name^=Question-8]:checked').length > 0) {
+            $('#next-8').removeClass('disabled');
+            step8 = true;
         } else {
-            $('#next-9').addClass('disabled');
-            step9 = false;
+            $('#next-8').addClass('disabled');
+            step8 = false;
         }
     });
 
+    $('input[name^=Question-9]').on('change', function () {
+        $('#next-9').removeClass('disabled');
+        step9 = true;
+    });
+
     $('input[name^=Question-10]').on('change', function () {
-        $('#next-10').removeClass('disabled');
-        step10 = true;
+        if ($('input[name^=Question-10]:checked').length > 0) {
+            $('#next-10').removeClass('disabled');
+            step10 = true;
+        } else {
+            $('#next-10').addClass('disabled');
+            step10 = false;
+        }
     });
 
     $('input[name^=Question-11]').on('change', function () {
@@ -101,8 +106,13 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-12]').on('change', function () {
-        $('#next-12').removeClass('disabled');
-        step12 = true;
+        if ($('input[name^=Question-12]:checked').length > 0) {
+            $('#next-12').removeClass('disabled');
+            step12 = true;
+        } else {
+            $('#next-12').addClass('disabled');
+            step12 = false;
+        }
     });
 
     $('input[name^=Question-13]').on('change', function () {

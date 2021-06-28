@@ -11,10 +11,7 @@ Webflow.push(function () {
         step7,
         step8,
         step9,
-        step10,
-        step11,
-        step12,
-        step13 = false;
+        step10 = false;
 
 
     var height = $('.w-slide:nth-child(' + currentSlide + ')').height();
@@ -61,18 +58,33 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-6]').on('change', function () {
-        $('#next-6').removeClass('disabled');
-        step6 = true;
+        if ($('input[name^=Question-6]:checked').length > 0) {
+            $('#next-6').removeClass('disabled');
+            step6 = true;
+        } else {
+            $('#next-6').addClass('disabled');
+            step6 = false;
+        }
     });
 
     $('input[name^=Question-7]').on('change', function () {
-        $('#next-7').removeClass('disabled');
-        step7 = true;
+        if ($('input[name^=Question-7]:checked').length > 0) {
+            $('#next-7').removeClass('disabled');
+            step7 = true;
+        } else {
+            $('#next-7').addClass('disabled');
+            step7 = false;
+        }
     });
 
     $('input[name^=Question-8]').on('change', function () {
-        $('#next-8').removeClass('disabled');
-        step8 = true;
+        if ($('input[name^=Question-8]:checked').length > 0) {
+            $('#next-8').removeClass('disabled');
+            step8 = true;
+        } else {
+            $('#next-8').addClass('disabled');
+            step8 = false;
+        }
     });
 
     $('input[name^=Question-9]').on('change', function () {
@@ -86,32 +98,12 @@ Webflow.push(function () {
     });
 
     $('input[name^=Question-10]').on('change', function () {
-        $('#next-10').removeClass('disabled');
-        step10 = true;
-    });
-
-    $('input[name^=Question-11]').on('change', function () {
-        if ($('input[name^=Question-11]:checked').length > 0) {
-            $('#next-11').removeClass('disabled');
-            step11 = true;
+        if ($('input[name^=Question-10]:checked').length > 0) {
+            $('#next-10').removeClass('disabled');
+            step10 = true;
         } else {
-            $('#next-11').addClass('disabled');
-            step11 = false;
-        }
-    });
-
-    $('input[name^=Question-12]').on('change', function () {
-        $('#next-12').removeClass('disabled');
-        step12 = true;
-    });
-
-    $('input[name^=Question-13]').on('change', function () {
-        if ($('input[name^=Question-13]:checked').length > 0) {
-            $('#next-13').removeClass('disabled');
-            step13 = true;
-        } else {
-            $('#next-13').addClass('disabled');
-            step13 = false;
+            $('#next-10').addClass('disabled');
+            step10 = false;
         }
     });
 
@@ -213,38 +205,8 @@ Webflow.push(function () {
     });
 
     $('#next-11').click(function (e) {
-        if (!step11) return;
         //e.preventDefault();
         $('.w-round div:nth-child(12)').trigger('tap');
-    });
-    $('#prev-11').click(function (e) {
-        //e.preventDefault();
-        $('.w-round div:nth-child(10)').trigger('tap');
-    });
-
-    $('#next-12').click(function (e) {
-        if (!step12) return;
-        //e.preventDefault();
-        $('.w-round div:nth-child(13)').trigger('tap');
-    });
-    $('#prev-12').click(function (e) {
-        //e.preventDefault();
-        $('.w-round div:nth-child(11)').trigger('tap');
-    });
-
-    $('#next-13').click(function (e) {
-        if (!step13) return;
-        //e.preventDefault();
-        $('.w-round div:nth-child(14)').trigger('tap');
-    });
-    $('#prev-13').click(function (e) {
-        //e.preventDefault();
-        $('.w-round div:nth-child(12)').trigger('tap');
-    });
-
-    $('#next-14').click(function (e) {
-        //e.preventDefault();
-        $('.w-round div:nth-child(15)').trigger('tap');
     });
 
     $(".w-slider-dot.w-active").attrchange({
@@ -261,13 +223,13 @@ Webflow.push(function () {
                 height = dCurrentSlide.height();
                 $('#w-slider-mask-0').height(height);
 
-                if (currentSlide == 14) {
+                if (currentSlide == 11) {
                     $('body').addClass('background');
                 } else {
                     $('body').removeClass('background');
                 }
 
-                if (currentSlide == 14 || currentSlide == 15) {
+                if (currentSlide == 11 || currentSlide == 12) {
                     $('#Footer').removeClass('hidden');
                     $('#FooterInfo').hide();
 
