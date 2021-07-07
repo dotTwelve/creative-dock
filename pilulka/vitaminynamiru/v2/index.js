@@ -35,7 +35,7 @@ Webflow.push(function () {
     });
 
     $('#Question-3').on('input', function () {
-        if ($(this).val() !== '') {
+        if ($(this).val() !== '' && $(this).val() > 12 && $(this).val() < 110) {
             $('#next-3').removeClass('disabled');
             step3 = true;
         } else {
